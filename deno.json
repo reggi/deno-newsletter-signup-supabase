@@ -1,0 +1,19 @@
+{
+  "tasks": {
+    "autoload": "deno run --allow-env --allow-net --allow-read --allow-ffi --watch autoload.tsx",
+    "main": "deno run --allow-env --allow-net --allow-read --allow-ffi --watch main.tsx"
+  },
+  "imports": {
+    "nano-jsx": "./nanossr.tsx"
+  },
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns"
+    ],
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
+  }
+}
